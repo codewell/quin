@@ -22,11 +22,7 @@
 
 (def test-jwt-secret "your-256-bit-secret")
 
-
 (def dummy-request {:headers {"authorization" (str "Bearer " test-jwt)}})
-
-(println (merge dummy-request test-jwt-map))
-
 
 ;; Token request middleware
 (deftest token-middleware
